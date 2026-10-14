@@ -1,0 +1,278 @@
+<html>
+
+<head>
+    <title>Matt Lourens</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Matt Lourens: Postdoctoral researcher in quantum many-body physics, tensor networks, and quantum information at Stellenbosch University.">
+    <style>
+        /* Fullscreen iframe */
+        #slides-frame:fullscreen {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Hide slides on mobile */
+        @media (max-width: 768px) {
+            #slides-section {
+                display: none;
+            }
+        }
+    </style>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 8mm;
+        }
+
+        @media print {
+            body {
+                font-size: 9pt;
+                line-height: 1.25;
+            }
+
+            /* Remove viewport height constraint */
+            body>div {
+                min-height: 0 !important;
+                height: auto !important;
+                align-items: flex-start;
+            }
+
+            /* Let sections use their natural heights */
+            body>div>div:first-child>div {
+                flex: 0 0 auto !important;
+            }
+
+            body>div>div:first-child>div>div {
+                width: 90% !important;
+            }
+
+            /* Hide slides */
+            #slides-section {
+                display: none !important;
+            }
+
+            /* Compact spacing */
+            h2 {
+                margin: 0.6em 0 0.2em !important;
+                break-after: avoid;
+            }
+
+            p {
+                margin: 0.8em 0 !important;
+                break-inside: avoid;
+                white-space: nowrap;
+            }
+
+            /* Limit image size */
+            img {
+                max-height: 55mm !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="margin: 0;">
+    <div style="display: flex; flex-direction: row;min-height: 100vh">
+        <div style="display: flex;flex-direction: column;justify-content: flex-start;flex:2">
+            <div style="flex:1;display: flex;justify-content: center;">
+                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;margin-top: 5px;">Hey, I'm
+                    Matt. I invent and
+                    use computational tools to better understand quantum many-body systems.
+                    My background used to be in Machine Learning, I obtained a Masters of Science degree
+                    from North-West University in data science and then worked for about two years at Capitec bank as a
+                    Machine
+                    Learning Engineer. I wanted to learn more about the physical phenomena surrounding me, and pursued a
+                    PhD
+                    in Physics at Stellenbosch University (defended successfully in 2026). I still want to learn more
+                    about my
+                    physical surroundings so I'm pursuing a career in research. I am currently a
+                    postdoctoral researcher
+                    at Stellenbosch University hosted by Prof. Francesco Petruccione.
+
+                    <!-- During my PhD I developed a method to automatically construct quantum circuit or tensor network
+                ansatze in a bottom up approach. The main idea is to try and capture rules that generates ansatze which
+                are quantitatively accurate yet remains qualitatively insightful and hopefully ends up being analytially tractable. -->
+                </div>
+            </div>
+            <div style="flex:3;display: flex;justify-content: center;">
+                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                    <h2>Publications</h2>
+                    <p style="margin: 0.3em 0;">
+                        (2026) Automated Variational Ansatz Design (PhD thesis)<br/>
+                        [<a href="./docs/lourens_phd_thesis.pdf">PDF</a> |
+                        <a href="https://hdl.handle.net/10019.1/136282">SUNScholar</a>]
+                        <b>M. Lourens</b>.
+                    </p>
+                    <p>
+                        (2026) Automated quantum algorithm design using a domain-specific
+                        language<br />
+                        [<a href="https://doi.org/10.1140/epjqt/s40507-026-00472-4"><em style="margin: 0 3px;">EPJ
+                                Quantum Technol.</em></a> |
+                        <a href="https://arxiv.org/abs/2503.08449">arXiv</a>]
+                        A. Rouillard, <b>M. Lourens</b>, and F. Petruccione.
+                    </p>
+
+                    <p>
+                        (2025) Generating Generalized Ground-State Ansätze from Few-Body Examples<br />
+                        [<a href="https://doi.org/10.1103/5vc5-9f4d"><em style="margin: 0 3px;">Phys. Rev.
+                                Lett.</em></a> |
+                        <a href="https://arxiv.org/abs/2503.00497">arXiv</a>]
+                        <b>M. Lourens</b>, I. Sinayskiy, J. N. Kriel, and F. Petruccione.
+                    </p>
+
+                    <p>
+                        (2023) Hierarchical quantum circuit representations for neural architecture
+                        search<br />
+                        [<a href="https://doi.org/10.1038/s41534-023-00747-z"><em style="margin: 0 3px;">npj Quantum
+                                Inf.</em></a> |
+                        <a href="https://arxiv.org/abs/2210.15073">arXiv</a>]
+                        <b>M. Lourens</b>, I. Sinayskiy, D. K. Park, C. Blank, and F. Petruccione.
+                    </p>
+
+                </div>
+            </div>
+
+            <div style="flex:1;display: flex;justify-content: center;">
+                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                    <h2>Open Source Software / Code</h2>
+                    <p style="margin: 0.3em 0;">HierarQcal: Constructing quantum circuits or tensor
+                        networks using modular building blocks. [<a
+                            href="https://github.com/matt-lourens/hierarqcal">GitHub</a>]</p>
+
+                    <p style="margin: 0.3em 0;">ansatz_search: Code for automated
+                        ground-state ansatz design. [<a href="https://github.com/matt-lourens/ansatz_search">GitHub</a>
+                        | <a href="https://doi.org/10.1103/5vc5-9f4d">Paper</a>]</p>
+                </div>
+            </div>
+            <div style="flex:3;display: flex;justify-content: center;">
+                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                    <h2>Blog Posts</h2>
+                    <p style="margin: 0.3em 0;">(2024) Quantum circuit generation and general
+                        compute graph design, <em>Unitary Foundation</em>. [<a
+                            href="https://unitary.foundation/posts/2024_hierarqcal/">Post</a>]</p>
+
+                    <p style="margin: 0.3em 0;">(2023) Hierarchical quantum circuit representations for neural
+                        architecture search, <em>Nature Research Communities</em>. [<a
+                            href="https://communities.springernature.com/posts/hierarchical-quantum-circuit-representations-for-neural-architecture-search">Post</a>]
+                    </p>
+
+                    <p style="margin: 0.3em 0;">(2023) A quick and easy way to build or generate
+                        QCNNs, <em>Unitary Foundation</em>. [<a
+                            href="https://unitary.foundation/posts/2023_hierarqcal/">Post</a>]</p>
+                </div>
+            </div>
+            <div style="flex:2;display: flex;justify-content: center;">
+                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                    <h2>Talks and Tutorials</h2>
+
+                    <p style="margin: 0.3em 0;">(2026) Automated ansatz design: <a
+                            href="https://www.sigmaphi.polito.it/"><em>SigmaPhi 2026</em></a>, Kolymbari, Crete,
+                        Greece. [<a href="./docs/2026_tenor_automated_ansatz_design.pdf">Pdf Slides</a>]
+                    </p>
+
+                    <p style="margin: 0.3em 0;">(2026) Automated ansatz design: <a
+                            href="https://tenors-network.eu/tenors-workshop-2/"><em>TENORS Workshop 2</em></a>, Trento,
+                        Italy.</p>
+
+                    <p style="margin: 0.3em 0;">(2026) Variational quantum algorithms: <a
+                            href="https://agriculture-science.ukzn.ac.za/event/quantum-computing-spring-school-2026/"><em>Quantum
+                                Computing Spring School</em></a>, Drakensberg, KwaZulu-Natal, South Africa.</p>
+
+                    <p style="margin: 0.3em 0;">(2026) Generating Generalised Ground-State Ansatzes from
+                        Few-Body Examples: <a
+                            href="https://meetings-archive.aps.org/smt/2026/mar-j42/8/"><em>APS</em></a>, Denver,
+                        Colorado, USA.</p>
+
+                    <p style="margin: 0.3em 0;">(2025) Generating Low-Dimensional Ansatzes for
+                        Interacting Quantum Many-Body States: <a
+                            href="https://www.aps.org/events/2025/joint-meeting"><em>APS</em></a>,
+                        Anaheim, California, USA.</p>
+
+                    <p style="margin: 0.3em 0;">(2023) Hierarchical quantum circuit representations: <a
+                            href="https://qtml-2023.web.cern.ch/programme/"><em>QTML</em></a>, Geneva, Switzerland. [<a
+                            href="https://matt-lourens.github.io/talk_2023_hierarqcal/">Online Slides</a>]</p>
+
+                    <p style="margin: 0.3em 0;">(2023) Hierarchical quantum circuit representations: <a
+                            href="https://unitary.foundation/community/2023/unitaryCON/"><em>unitaryCON</em></a>, Rome,
+                        Italy.</p>
+
+                </div>
+            </div>
+            <div style="flex:1;display: flex;justify-content: center;">
+                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                    <h2>Achievements</h2>
+
+                    <p style="margin: 0.3em 0;">(2023) Oppenheimer Memorial Trust Scholarship.</p>
+
+                    <p style="margin: 0.3em 0;">(2022) Unitary Fund Grant.</p>
+
+                    <p style="margin: 0.3em 0;">(2019) MSc in Data Science — With Distinction.
+                    </p>
+
+                    <p style="margin: 0.3em 0;">(2019) MiWay Data Science Hackathon — Winner.</p>
+
+                    <p style="margin: 0.3em 0;">(2018) BSc Honours in Data Science — With
+                        Distinction.</p>
+
+                    <p style="margin: 0.3em 0;">(2017) BSc in Computer Science and Statistics — With Distinction.</p>
+
+                </div>
+            </div>
+
+        </div>
+        <div style="flex: 1; display: flex;flex-direction: column; justify-content: flex-start; margin-right: 10px;">
+            <img src="img/matt.png"
+                style="max-height: 50vh; max-width: 100%; width: auto; height: auto; align-self: flex-end;" />
+            <div style="font-size: 1em; color: #555; width: 100%; text-align: left;">
+
+                <p style="margin-top: 0px;margin-bottom: 0px;">
+                    <strong>Contact & Links:</strong>
+                    [<button id="copy-email"
+                        style="background:none; border:none; padding:0; color:#06c; text-decoration:underline; cursor:pointer; font:inherit;">Copy
+                        email</button> |
+                    <a href="https://github.com/matt-lourens">GitHub</a> |
+                    <a href="https://scholar.google.com/citations?user=09ip_kwAAAAJ">Google Scholar</a>]
+                </p>
+            </div>
+
+            <script>
+                document.getElementById("copy-email").addEventListener("click", async function () {
+                    const email = ["lourens", "mattj"].join("") + "@" + ["gmail", "com"].join(".");
+
+                    try {
+                        await navigator.clipboard.writeText(email);
+                        this.textContent = "Copied!";
+                        setTimeout(() => this.textContent = "Copy email", 2000);
+                    } catch {
+                        this.textContent = "Copy failed";
+                    }
+                });
+                async function fullscreenSlides() {
+                    const iframe = document.getElementById("slides-frame");
+
+                    await iframe.requestFullscreen();
+                    iframe.focus();
+                    iframe.contentWindow.focus();
+                }
+            </script>
+            <div id="slides-section">
+
+                <p style="margin: 7px 0;">
+                    Here are some slides to get a feel for all this circuit generation talk:
+                    <button onclick="fullscreenSlides()">Fullscreen</button>
+                </p>
+
+                <iframe id="slides-frame"
+                    src="https://matt-lourens.github.io/talk_2023_hierarqcal?slides=16,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,68,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,97,98,99,100,101"
+                    style="width: 100%; height: 45vh; border: 1px solid black;" allowfullscreen>
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
