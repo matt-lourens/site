@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,6 +7,11 @@
     <meta name="description"
         content="Matt Lourens: Postdoctoral researcher in quantum many-body physics, tensor networks, and quantum information at Stellenbosch University.">
     <style>
+        body {
+            font-family: sans-serif;
+            font-size: 1.0em;
+        }
+
         /* Fullscreen iframe */
         #slides-frame:fullscreen {
             width: 100%;
@@ -13,10 +19,59 @@
             border: none;
         }
 
-        /* Hide slides on mobile */
-        @media (max-width: 768px) {
+        /* mobile */
+        @media screen and (max-width: 768px) {
+
+            /* Hide slides */
             #slides-section {
                 display: none;
+            }
+
+            /* Increase spacing between items on mobile */
+            #page-layout>div:first-child p {
+                margin: 1em 0 !important;
+            }
+
+            /* Stack columns vertically */
+            #page-layout {
+                flex-direction: column !important;
+            }
+
+            /* Right column appears first */
+            #page-layout>div:last-child {
+                order: -1;
+                flex: none !important;
+                width: 100%;
+                margin-right: 0 !important;
+                align-items: center;
+            }
+
+            /* Centre the picture */
+            #page-layout>div:last-child>img {
+                align-self: center !important;
+                max-height: 35vh !important;
+            }
+
+            /* Centre contact information */
+            #page-layout>div:last-child>div {
+                width: 90% !important;
+                text-align: center !important;
+            }
+
+            /* Left column appears below */
+            #page-layout>div:first-child {
+                flex: none !important;
+                width: 100%;
+            }
+
+            /* Natural section heights */
+            #page-layout>div:first-child>div {
+                flex: 0 0 auto !important;
+            }
+
+            /* Wider content on mobile */
+            #page-layout>div:first-child>div>div {
+                width: 90% !important;
             }
         }
     </style>
@@ -74,33 +129,28 @@
 </head>
 
 <body style="margin: 0;">
-    <div style="display: flex; flex-direction: row;min-height: 100vh">
+    <div id="page-layout" style="display: flex; flex-direction: row; min-height: 100vh">
         <div style="display: flex;flex-direction: column;justify-content: flex-start;flex:2">
             <div style="flex:1;display: flex;justify-content: center;">
-                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;margin-top: 5px;">Hey, I'm
+                <div style="font-size: 1em; color: #333; width: 80%; text-align: justify;margin-top: 20px;">Hey, I'm
                     Matt. I invent and
-                    use computational tools to better understand quantum many-body systems.
-                    My background used to be in Machine Learning, I obtained a Masters of Science degree
-                    from North-West University in data science and then worked for about two years at Capitec bank as a
-                    Machine
-                    Learning Engineer. I wanted to learn more about the physical phenomena surrounding me, and pursued a
+                    use computational tools to better understand quantum many-body systems. My background is in machine
+                    learning and physics. I obtained an MSc in data science from North-West
+                    University and then worked for about two years at Capitec Bank as a
+                    machine
+                    learning engineer. I wanted to learn more about the physical phenomena surrounding me, and pursued a
                     PhD
-                    in Physics at Stellenbosch University (defended successfully in 2026). I still want to learn more
-                    about my
-                    physical surroundings so I'm pursuing a career in research. I am currently a
+                    in physics at Stellenbosch University (defended successfully in 2026). I still want to learn about
+                    physical phenomena, so I am currently a
                     postdoctoral researcher
                     at Stellenbosch University hosted by Prof. Francesco Petruccione.
-
-                    <!-- During my PhD I developed a method to automatically construct quantum circuit or tensor network
-                ansatze in a bottom up approach. The main idea is to try and capture rules that generates ansatze which
-                are quantitatively accurate yet remains qualitatively insightful and hopefully ends up being analytially tractable. -->
                 </div>
             </div>
             <div style="flex:3;display: flex;justify-content: center;">
-                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                <div style="font-size: 1em; color: #333; width: 80%; text-align: justify;">
                     <h2>Publications</h2>
                     <p style="margin: 0.3em 0;">
-                        (2026) Automated Variational Ansatz Design (PhD thesis)<br/>
+                        (2026) Automated Variational Ansatz Design (PhD thesis)<br />
                         [<a href="./docs/lourens_phd_thesis.pdf">PDF</a> |
                         <a href="https://hdl.handle.net/10019.1/136282">SUNScholar</a>]
                         <b>M. Lourens</b>.
@@ -135,7 +185,7 @@
             </div>
 
             <div style="flex:1;display: flex;justify-content: center;">
-                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                <div style="font-size: 1em; color: #333; width: 80%; text-align: justify;">
                     <h2>Open Source Software / Code</h2>
                     <p style="margin: 0.3em 0;">HierarQcal: Constructing quantum circuits or tensor
                         networks using modular building blocks. [<a
@@ -147,7 +197,7 @@
                 </div>
             </div>
             <div style="flex:3;display: flex;justify-content: center;">
-                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                <div style="font-size: 1em; color: #333; width: 80%; text-align: justify;">
                     <h2>Blog Posts</h2>
                     <p style="margin: 0.3em 0;">(2024) Quantum circuit generation and general
                         compute graph design, <em>Unitary Foundation</em>. [<a
@@ -164,7 +214,7 @@
                 </div>
             </div>
             <div style="flex:2;display: flex;justify-content: center;">
-                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
+                <div style="font-size: 1em; color: #333; width: 80%; text-align: justify;">
                     <h2>Talks and Tutorials</h2>
 
                     <p style="margin: 0.3em 0;">(2026) Automated ansatz design: <a
@@ -201,22 +251,17 @@
                 </div>
             </div>
             <div style="flex:1;display: flex;justify-content: center;">
-                <div style="font-size: 1em; color: #555; width: 80%; text-align: justify;">
-                    <h2>Achievements</h2>
-
-                    <p style="margin: 0.3em 0;">(2023) Oppenheimer Memorial Trust Scholarship.</p>
-
-                    <p style="margin: 0.3em 0;">(2022) Unitary Fund Grant.</p>
-
-                    <p style="margin: 0.3em 0;">(2019) MSc in Data Science — With Distinction.
+                <div style="font-size: 1em; color: #333; width: 80%; text-align: justify;">
+                    <h2>Education</h2>
+                    <p style="margin: 0.3em 0;">(2026) PhD in Physics (Oppenheimer Memorial Trust Scholarship).
                     </p>
 
-                    <p style="margin: 0.3em 0;">(2019) MiWay Data Science Hackathon — Winner.</p>
+                    <p style="margin: 0.3em 0;">(2019) MSc in Data Science (with distinction).
+                    </p>
 
-                    <p style="margin: 0.3em 0;">(2018) BSc Honours in Data Science — With
-                        Distinction.</p>
+                    <p style="margin: 0.3em 0;">(2018) BSc Honours in Data Science (with distinction).</p>
 
-                    <p style="margin: 0.3em 0;">(2017) BSc in Computer Science and Statistics — With Distinction.</p>
+                    <p style="margin: 0.3em 0;">(2017) BSc in Computer Science and Statistics (with distinction).</p>
 
                 </div>
             </div>
@@ -225,7 +270,7 @@
         <div style="flex: 1; display: flex;flex-direction: column; justify-content: flex-start; margin-right: 10px;">
             <img src="img/matt.png"
                 style="max-height: 50vh; max-width: 100%; width: auto; height: auto; align-self: flex-end;" />
-            <div style="font-size: 1em; color: #555; width: 100%; text-align: left;">
+            <div style="font-size: 1em; color: #333; width: 100%; text-align: left;">
 
                 <p style="margin-top: 0px;margin-bottom: 0px;">
                     <strong>Contact & Links:</strong>
@@ -260,7 +305,7 @@
             <div id="slides-section">
 
                 <p style="margin: 7px 0;">
-                    Here are some slides to get a feel for all this circuit generation talk:
+                    HierarQcal Slides
                     <button onclick="fullscreenSlides()">Fullscreen</button>
                 </p>
 
